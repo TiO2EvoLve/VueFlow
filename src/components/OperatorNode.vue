@@ -15,8 +15,7 @@ const { updateNodeData } = useVueFlow()
         v-for="operator of operators"
         :key="`${id}-${operator}-operator`"
         :class="{ selected: data.operator === operator }"
-        @click="updateNodeData(props.id, { operator })"
-    >
+        @click="updateNodeData(props.id, { operator })">
       <Icon :name="operator" />
     </button>
   </div>
